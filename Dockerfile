@@ -1,9 +1,9 @@
-FROM nginx:latest
+FROM nginx:alpine
 
 # Install dependencies
-RUN apt-get update
-RUN apt-get --assume-yes install vim
-RUN apt-get --assume-yes install nginx-module-njs
+RUN apk update
+RUN apk add vim
+RUN apk add nginx-module-njs
 
 # nginx configuration
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
