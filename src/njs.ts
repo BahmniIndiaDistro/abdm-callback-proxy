@@ -4,6 +4,7 @@ const delegateRepository: { [key: string]: string } = {
   'Bahmni-Demo': 'lite.mybahmni.in',
   'Bahmni-Perf': 'performance.lite.mybahmni.in',
   'BahmniGoK-Dev': 'dev.gdobahmni.click',
+  'BahmniGoK-Uat': 'uat.gdobahmni.click',
 };
 
 function delegate(request: NginxHTTPRequest) {
